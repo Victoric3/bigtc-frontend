@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap&family=Hammersmith+One&family=Londrina+Solid:wght@900&display=swap');
+.bg-planet-svg {
+    position: absolute;
+    top: 250px;
+    right: -205px;
+    z-index: -5;
+    width: 450px;
+}
+
+.bg-planet2-svg {
+    position: absolute;
+    bottom: -125px;
+    left: -180px;
+    z-index: -5;
+    width: 450px;
+    opacity: 0.8;
+}
+
+.bg-planet3-svg {
+    position: absolute;
+    top: -65px;
+    left: -170px;
+    z-index: -5;
+    width: 450px;
+    opacity: 0.8;
+}
+.search-wrapper{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* for search.js */
+.search-form-display{
+    width: 450px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.search-form-display input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    padding-left: 0.9rem;
+    background-color: rgba(105, 113, 116, 0.1);
+}
+
+.search-form-display button {
+    position: absolute;
+    border: none;
+    top: 25px;
+    right: 28px;
+}
+
+.search-form-display button.disBtn {
+    color: rgb(167, 164, 164);
+}
+
+.search-form-display button.searchBtn {
+    color: #0063a5;
+}
+
+.search-form-display button i {
+    font-size: 1.4rem;
+}
+
+.suggestion-display {
+    position: absolute;
+    top: 76px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 200px;
+    background-color: #f8f8f8;
+    z-index: 2000;
+    width: 415px;
+    border-radius: 10px;
+  }
+  
+  .suggestion-display li {
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .suggestion-display li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  @media (max-width: 600px) {
+    .search-form-display{
+        width: 100%;
+    }
+    .suggestion-display{
+        width: 90%;
+    }
+  }
+
+.blog-caption{
+    width: 65%;
+    margin: 0px auto;
+}
+.blog-caption h4{
+    color: #333;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.exam-card-wrapper {
+    position: relative;
+    width: 1050px;
+    height: auto;
+    margin: 1.2rem auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.story-card-wrapper {
+    position: relative;
+    width: 1050px;
+    min-height: 800px;
+    margin: 1.2rem auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: relative;
+    height: 460px;
+    border-radius: 6px;
+    margin: 2rem 1rem;
+    border: 1px solid rgba(121, 118, 118, 0.3);
+    box-shadow: 0 0 10px 5px rgba(88, 88, 88, 0.1);
+    background-color: white;
+    transition: 350ms ease all;
+}
+
+@media only screen and (max-width: 1050px) {
+    .story-card-wrapper {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .story-card {
+        width: 45%;
+    }
+    .bg-planet3-svg,
+    .bg-planet-svg,
+    .bg-planet2-svg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 674px) {
+    .story-card {
+        width: 380px
+    }
+    .blog-caption{
+        width: 100%;
+    }
+}
+
+.story-card:hover {
+    transform: scale(1.01);
+}
+
+.story-card a.story-link {
+    text-decoration: none;
+}
+
+.story-card img.story-image {
+    width: 100%;
+    height: 225px;
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+}
+
+.story-card .story-content-wrapper {
+    padding: 14px;
+}
+
+.story-card h5.story-title {
+    font-size: 1.4rem;
+    line-height: 30px;
+    height: 87px;
+    letter-spacing: 0.6px;
+    color: black;
+    padding: 10px 3px;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    word-wrap: break-word;
+    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Londrina Solid', cursive;
+}
+
+.story-card .story-text {
+    height: 55px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.story-card .story-text,
+.story-card .story-text * {
+    color: rgb(92, 92, 92);
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.story-card .story-createdAt {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(48, 47, 47);
+}
+
+@media only screen and (max-width: 1050px) {
+    .story-card-wrapper{
+        justify-content: flex-start;
+    }
+    .exam-card-wrapper{
+        justify-content: flex-start;
+    }
+}

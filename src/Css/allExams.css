@@ -1,0 +1,115 @@
+/* .all-exams-wrapper{
+} */
+
+.all-exam-cards-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0% 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+}
+.exam-card-wrapper{
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10px; 
+    width: 40%;
+    overflow: hidden;
+    gap: 40px;
+}
+.exam-card-image{
+    width: 150px;
+    height: 100%; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+.exam-card-details{
+    margin: 5px
+}
+.exam-card-date{
+    font-size: 15px;
+    color: #ccc;
+    padding: 5px;
+}
+
+.all-exam-details-wrapper{
+    width: 65%;
+    margin: 0% 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 15px;
+}
+
+.all-exam-details-image{
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.all-exam-details-title{
+    font-size: 18px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.all-exam-details-submit-button{
+    padding: 10px 20px; 
+    background-color: #007BFF; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    align-self: flex-end;
+}
+@media(max-width: 1024px) {
+    .all-exam-cards-wrapper{
+        width: 100%;
+    }
+    .all-exam-details-wrapper{
+        width: 100%;
+    }
+    .exam-card-wrapper{
+        margin: 5px;
+        width: 48%;
+    }
+}
+@media(max-width: 600px) {
+    .all-exam-cards-wrapper{
+        width: 100%;
+    }
+    .exam-card-wrapper{
+        margin: 5px;
+        width: 90%;
+    }
+}
+@media(max-width: 400px) {
+    .all-exam-cards-wrapper{
+        width: 100%;
+    }
+    .exam-card-wrapper{
+        margin: 0px;
+        width: 90%;
+    }
+}
+@media(max-width: 300px) {
+    .all-exam-cards-wrapper{
+        width: 100%;
+    }
+    .exam-card-wrapper{
+        margin: 0px;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .exam-card-image{
+        width: 270px;
+        height: auto;
+    }
+}

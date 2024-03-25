@@ -1,0 +1,35 @@
+const biologyTopics = [
+  "Evolution among the following",
+  "Living organisms",
+  "Variety of Organisms",
+  "Internal structure of a flowering plant",
+  "Internal structure of a mammal",
+  "Internal structure of a flowering plant - Stem",
+  "Evolution among the following - Plantae (plants)",
+  "Nutrition",
+  "Transport",
+  "Respiration",
+  "Nutrition - Plant nutrition",
+  "Support and movement",
+  "Excretion",
+  "Reproduction",
+  "Growth",
+  "Co-ordination and control",
+  "Factors affecting the distribution of Organisms",
+  "Energy flow in the ecosystem: food chains, food webs and trophic levels",
+  "Symbiotic interactions of plants and animals",
+  "Nutrient cycling in nature",
+  "Symbiotic interactions of plants and animals - Water Cycle",
+  "Natural Habitats",
+  "Local (Nigerian) Biomes",
+  "The Ecology of Populations",
+  "SOIL",
+  "Humans and Environment",
+  "Variation In Population",
+  "Heredity",
+  "Theories of evolution",
+  "Evidence of evolution"
+];
+// console.log(biologyTopics);
+
+  export default biologyTopics
