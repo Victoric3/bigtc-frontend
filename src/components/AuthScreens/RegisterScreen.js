@@ -31,7 +31,7 @@ const RegisterScreen = () => {
       return setError("Passwords do not match");
     }
     try {
-      const response = await fetch(`${configData.baseUrl}/auth/register`,{
+      const response = await fetch(`${configData.dev?'http://localhost:5000' : configData.baseUrl}/auth/register`,{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

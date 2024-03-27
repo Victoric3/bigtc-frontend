@@ -3,10 +3,10 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import '../../Css/Footer.css'
 import configData from '../../config.json'
-import logo from '../../img/logo.png'
+import logo from '../../img/logo.jpg'
 import slugify from 'slugify';
 import { useNavigate } from 'react-router-dom';
-
+import navLinks from '../utilities/navLinks';
 
 
 const Footer = () => {
@@ -37,13 +37,7 @@ return (
         <ul>
           <li><a href="/terms-of-service">Terms of Service</a></li>
           <li><a href="/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/questionDisplay">Continue Studying</a></li>
-          <li><a href="/addstory">Post Question</a></li>
-          <li><a href="/customExam">Custom Exam</a></li>
-          <li><a href="/jamb">UTME Simulator</a></li>
-          <li><a href="/topicByTopic">Topic by Topic</a></li>
-          <li><a href="/examHistory">Exam History</a></li>
-          <li><a href="/readList">Read List Page</a></li>
+          {navLinks[1].children.map(nav => {return<li><a href={nav.navLink}>{nav.navName}</a></li>})}
         </ul>
       </div>
       <div className="quick-links">
@@ -108,10 +102,10 @@ return (
         <div className='logo-container'>
           <div style={{display: 'flex', alignItems: 'center'}}>
           <img src={logo} alt="King's heart logo" className='logo'/>
-          <h3>KingsHeart</h3>
+          <h3>{configData.Name}</h3>
           </div>
           <hr className='horizontal-line'/>
-          <h4 style={{color: configData.AppColor}}>The Learning Tower</h4>
+          <h4 style={{color: configData.AppColor}}>Breathing into thoughts</h4>
         </div>
       </div>
       <hr style={{

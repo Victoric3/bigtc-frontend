@@ -20,19 +20,9 @@ import EditStory from './components/StoryScreens/EditStory';
 import ReadListPage from './components/ProfileScreens/ReadListPage';
 import PrivacyPolicy from './components/GeneralScreens/privacyPolicy';
 import TermsOfService from './components/GeneralScreens/termsOfService';
-import JambUTMEExam from './components/CbtScreens/jambInfo';
-import QuestionComponent from './components/CbtScreens/questionDisplay';
-import ResultCard from './components/CbtScreens/resultTemp';
-import TopicByTopicExam from './components/CbtScreens/topicByTopic';
-import CustomExam from './components/CbtScreens/customExam';
-import ExamHistoryList from './components/CbtScreens/examHistory';
 import Search from './components/GeneralScreens/search';
-import AllExams from './components/CbtScreens/allExams';
 import SitemapViewer from './components/GeneralScreens/sitemap';
-import ExamPage from './components/CbtScreens/allExamDetails';
-import CookieNotification from './components/GeneralScreens/cookieNotification';
-import ImageUpload from './components/image-to-3d/imageUpload';
-import VideoTable from './components/GeneralScreens/youtubeAnal';
+import CookieNotification from './components/GeneralScreens/cookieNotification'
 
 
 const App = () => {
@@ -49,27 +39,7 @@ const App = () => {
                                     <Route exact path='/' element={<Home />} />
                                     <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />
                                     <Route exact path='/terms-of-service' element={<TermsOfService />} />
-                                    <Route exact path='/jamb' element={<PrivateRoute />}>
-                                    <Route exact path='/jamb' element={<JambUTMEExam />} />
-                                    </Route>
-                                    <Route exact path='/allExams' element={<PrivateRoute />}>
-                                    <Route exact path='/allExams' element={<AllExams />} />
-                                    </Route>
-                                    <Route exact path='/allExams' element={<PrivateRoute />}>
-                                    <Route exact path='/allExams/details/:slug' element={<ExamPage />} />
-                                    </Route>
-                                    <Route exact path='/topicByTopic' element={<PrivateRoute />}>
-                                    <Route exact path='/topicByTopic' element={<TopicByTopicExam />} />
-                                    </Route>
-                                    <Route exact path='/customExam' element={<PrivateRoute />}>
-                                    <Route exact path='/customExam' element={<CustomExam />} />
-                                    </Route>
-                                    <Route exact path='/questionDisplay' element={<PrivateRoute />}>
-                                    <Route exact path='/questionDisplay' element={<QuestionComponent />} />
-                                    </Route>
-                                    <Route exact path='/resultTemp' element={<PrivateRoute />}>
-                                          <Route exact path='/resultTemp' element={<ResultCard />} />
-                                    </Route>
+                                    
 
 
                                     <Route exact path="/story/:slug" element={<DetailStory />} />
@@ -80,9 +50,6 @@ const App = () => {
 
                                     <Route exact path='/profile' element={<PrivateRoute />}>
                                           <Route exact path='/profile' element={<Profile />} />
-                                    </Route>
-                                    <Route exact path='/examHistory' element={<PrivateRoute />}>
-                                          <Route exact path='/examHistory' element={<ExamHistoryList />} />
                                     </Route>
 
                                     <Route exact path='/edit_profile' element={<PrivateRoute />}>
@@ -113,10 +80,6 @@ const App = () => {
                                     <Route exact path='/readList' element={<PrivateRoute />}>
                                           <Route exact path='/readList' element={<ReadListPage />} />
                                     </Route> 
-                                    <Route exact path='/3dconverter' element={<PrivateRoute />}>
-                                          <Route exact path='/3dconverter' element={<ImageUpload />} />
-                                    </Route> 
-                                    <Route exact path='/youtube' element={<VideoTable />} />
                                     
 
                               </Route>

@@ -18,7 +18,7 @@ const LoginScreen = () => {
     e.preventDefault();
     setIsLoading(true)
     try {
-      const response = await fetch(`${configData.baseUrl}/auth/login`,{
+      const response = await fetch(`${configData.dev ? 'http://localhost:5000' : configData.baseUrl}/auth/login`,{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

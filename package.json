@@ -1,5 +1,5 @@
 {
-  "name": "victor-cbt",
+  "name": "bigtc",
   "proxy": "http://localhost:5000",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +16,7 @@
     "react-scripts": "5.0.1",
     "react-syntax-highlighter": "^15.5.0",
     "slugify": "^1.6.5",
+    "styled-components": "^6.1.8",
     "uuid": "^9.0.1"
   },
   "scripts": {
